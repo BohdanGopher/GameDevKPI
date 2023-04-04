@@ -735,10 +735,10 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -73.40425, y: 10.385019}
-      - {x: -73.32168, y: -11.786138}
-      - {x: 75.08136, y: -14.63516}
-      - {x: 74.81479, y: 10.743619}
+    - - {x: -38.378014, y: 10.803993}
+      - {x: -38.211647, y: -12.037521}
+      - {x: 51.367435, y: -12.959265}
+      - {x: 51.352245, y: 11.330182}
 --- !u!4 &1525201797
 Transform:
   m_ObjectHideFlags: 0
@@ -926,6 +926,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1699350376}
+  - component: {fileID: 1699350377}
   m_Layer: 0
   m_Name: Background
   m_TagString: Untagged
@@ -955,6 +956,34 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1699350377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1699350375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13ca5b90c236cfb4d82092252def3df0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _layers:
+  - <Transform>k__BackingField: {fileID: 1706314191}
+    <Speed>k__BackingField: 0.1
+  - <Transform>k__BackingField: {fileID: 1291024484}
+    <Speed>k__BackingField: 0.2
+  - <Transform>k__BackingField: {fileID: 1688460109}
+    <Speed>k__BackingField: 0.3
+  - <Transform>k__BackingField: {fileID: 1597135396}
+    <Speed>k__BackingField: 0.4
+  - <Transform>k__BackingField: {fileID: 1702379737}
+    <Speed>k__BackingField: 0.4
+  - <Transform>k__BackingField: {fileID: 359481329}
+    <Speed>k__BackingField: 0.4
+  - <Transform>k__BackingField: {fileID: 1151195688}
+    <Speed>k__BackingField: 0.5
+  _target: {fileID: 519420032}
 --- !u!1 &1702379736
 GameObject:
   m_ObjectHideFlags: 0
