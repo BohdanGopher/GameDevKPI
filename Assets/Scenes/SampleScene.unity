@@ -443,6 +443,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e64563d229f45c040b1a839191fb88dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _animator: {fileID: 95898481843747760}
   _playerEntity: {fileID: 3206326880915113985}
 --- !u!1 &1151195687
 GameObject:
@@ -1197,7 +1198,7 @@ GameObject:
   - component: {fileID: 639440691}
   - component: {fileID: 639440693}
   m_Layer: 0
-  m_Name: sword_man
+  m_Name: Swordman
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1759,6 +1760,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b125257d1c502a47991191f261cfa31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _animator: {fileID: 95898481843747760}
   _horizontalSpeed: 8
   _faceRight: 0
   _verticalSpeed: 4

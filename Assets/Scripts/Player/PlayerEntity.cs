@@ -6,6 +6,7 @@ namespace Player
     [RequireComponent(typeof(Rigidbody2D))]
     public class PlayerEntity : MonoBehaviour
     {
+        [SerializeField] private Animator _animator;
         [Header("HorizontalMovement")]
         [SerializeField] private float _horizontalSpeed;
         [SerializeField] private bool _faceRight;
@@ -49,6 +50,7 @@ namespace Player
             Vector2 velocity = _rigidbody.velocity;
             velocity.x = direction * _horizontalSpeed;
             _rigidbody.velocity = velocity;
+            _animator.SetFloat("_speed", Math.Abs(velocity.x));
         }
 
         public void MoveVertically(float direction)
@@ -59,7 +61,7 @@ namespace Player
             Vector2 velocity = _rigidbody.velocity;
             velocity.y = direction * _verticalSpeed;
             _rigidbody.velocity = velocity;
-            
+
             if (direction == 0)
                 return;
 
@@ -114,6 +116,7 @@ namespace Player
         private void ResetJump()
         {
             _isJumping = false;
+            _animator.SetBool("_isJumping", false);
             _rigidbody.position = new Vector2(_rigidbody.position.x, _startJumpVerticalPosition);
             _rigidbody.gravityScale = 0;
         }
